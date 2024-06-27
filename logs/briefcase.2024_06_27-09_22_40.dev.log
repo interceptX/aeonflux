@@ -1,0 +1,385 @@
+Date/Time:       2024-06-27 09:22:40 
+Command line:    /home/hackerone/python-libraries/bin/briefcase dev
+
+OS Release:      Linux 6.8.5-301.fc40.x86_64
+OS Version:      #1 SMP PREEMPT_DYNAMIC Thu Apr 11 20:00:10 UTC 2024
+Architecture:    x86_64
+Platform:        Linux-6.8.5-301.fc40.x86_64-x86_64-with-glibc2.39
+
+Python exe:      /home/hackerone/python-libraries/bin/python
+Python version:  3.12.2 (main, Feb 21 2024, 00:00:00) [GCC 14.0.1 20240217 (Red Hat 14.0.1-0)]
+Virtual env:     True
+Conda env:       False
+
+Briefcase:       0.3.19
+Target platform: linux
+Target format:   None
+
+Environment Variables:
+	COLORTERM=truecolor
+	DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+	DEBUGINFOD_URLS=https://debuginfod.fedoraproject.org/ 
+	DESKTOP_SESSION=xfce
+	DISPLAY=:0.0
+	EDITOR=/usr/bin/nano
+	GDMSESSION=xfce
+	GDM_LANG=en_US.utf8
+	GTK_IM_MODULE=gtk-im-context-simple
+	HISTCONTROL=ignoredups
+	HISTSIZE=1000
+	HOME=/home/hackerone
+	HOSTNAME=fedora
+	IMSETTINGS_INTEGRATE_DESKTOP=yes
+	IMSETTINGS_MODULE=none
+	LANG=en_US.utf8
+	LESSOPEN=||/usr/bin/lesspipe.sh %s
+	LOGNAME=hackerone
+	LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:
+	MAIL=/var/spool/mail/hackerone
+	OLDPWD=/home/hackerone/aeonflux/src/aeonflux
+	PATH=/home/hackerone/python-libraries/bin:/home/hackerone/.local/bin:/home/hackerone/bin:/usr/local/bin:/usr/bin:/usr/local/go/bin:/usr/local/sbin:/usr/sbin
+	PS1=(python-libraries) ${PROMPT_START@P}\[\e[${PROMPT_COLOR}m\]${PROMPT_USERHOST@P}\[\e[0m\]${PROMPT_SEPARATOR@P}\[\e[${PROMPT_DIR_COLOR:-${PROMPT_COLOR}}m\]${PROMPT_DIRECTORY@P}\[\e[0m\]${PROMPT_END@P}\$\[\e[0m\] 
+	PWD=/home/hackerone/aeonflux
+	QT_IM_MODULE=xim
+	SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3443,unix/unix:/tmp/.ICE-unix/3443
+	SHELL=/bin/bash
+	SHLVL=2
+	SSH_AGENT_PID=3666
+	SSH_ASKPASS=********************
+	SSH_AUTH_SOCK=/tmp/ssh-XXXXXXFCLmvH/agent.3443
+	TERM=screen-256color
+	TERM_PROGRAM=tmux
+	TERM_PROGRAM_VERSION=3.4
+	TMUX=/tmp/tmux-1000/default,4324,0
+	TMUX_PANE=%1
+	USER=hackerone
+	VIRTUAL_ENV=/home/hackerone/python-libraries
+	VIRTUAL_ENV_PROMPT=(python-libraries) 
+	VTE_VERSION=7402
+	WINDOWID=54525955
+	XAUTHORITY=/run/lightdm/hackerone/xauthority
+	XDG_CONFIG_DIRS=/etc/xdg
+	XDG_CURRENT_DESKTOP=XFCE
+	XDG_DATA_DIRS=/usr/local/share:/usr/share
+	XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/hackerone
+	XDG_MENU_PREFIX=xfce-
+	XDG_RUNTIME_DIR=/run/user/1000
+	XDG_SEAT=seat0
+	XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+	XDG_SESSION_CLASS=user
+	XDG_SESSION_DESKTOP=xfce
+	XDG_SESSION_ID=2
+	XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+	XDG_SESSION_TYPE=x11
+	XDG_VTNR=1
+	XMODIFIERS=@im=none
+	_=/home/hackerone/python-libraries/bin/briefcase
+
+pyproject.toml:
+# This project was generated with 0.3.19 using template: https://github.com/beeware/briefcase-template@v0.3.19
+[tool.briefcase]
+project_name = "aeonflux"
+bundle = "bytesecurity.com"
+version = "0.0.1"
+url = "https://ezstat.ru/marvel-profile.html"
+license.file = "LICENSE"
+author = "Marvel Gulane"
+author_email = "gulanemarvel@gmail.com"
+
+[tool.briefcase.app.aeonflux]
+formal_name = "aeonflux"
+description = "Red Team Security App"
+long_description = """This app focusing in real world hacking. Compiled 2024 CVE's for offensive security analysis."""
+sources = [
+    "src/aeonflux",
+]
+test_sources = [
+    "tests",
+]
+
+requires = [
+]
+test_requires = [
+    "pytest",
+]
+
+[tool.briefcase.app.aeonflux.macOS]
+universal_build = true
+requires = [
+    "toga-cocoa~=0.4.5",
+    "std-nslog~=1.0.0",
+]
+
+[tool.briefcase.app.aeonflux.linux]
+requires = [
+    "toga-gtk~=0.4.5",
+]
+
+[tool.briefcase.app.aeonflux.linux.system.debian]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "libcairo2-dev",
+    # Needed to compile PyGObject wheel
+    "libgirepository1.0-dev",
+]
+
+system_runtime_requires = [
+    # Needed to provide GTK and its GI bindings
+    "gir1.2-gtk-3.0",
+    "libgirepository-1.0-1",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra-gtk3-module",
+    # Needed to provide WebKit2 at runtime
+    # Note: Debian 11 and Ubuntu 20.04 require gir1.2-webkit2-4.0 instead
+    # "gir1.2-webkit2-4.1",
+]
+
+[tool.briefcase.app.aeonflux.linux.system.rhel]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo-gobject-devel",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection-devel",
+]
+
+system_runtime_requires = [
+    # Needed to support Python bindings to GTK
+    "gobject-introspection",
+    # Needed to provide GTK
+    "gtk3",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra-gtk3",
+    # Needed to provide WebKit2 at runtime
+    # "webkit2gtk3",
+]
+
+[tool.briefcase.app.aeonflux.linux.system.suse]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo-devel",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection-devel",
+]
+
+system_runtime_requires = [
+    # Needed to provide GTK
+    "gtk3",
+    # Needed to support Python bindings to GTK
+    "gobject-introspection", "typelib(Gtk) = 3.0",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra-gtk3-module",
+    # Needed to provide WebKit2 at runtime
+    # "libwebkit2gtk3", "typelib(WebKit2)",
+]
+
+[tool.briefcase.app.aeonflux.linux.system.arch]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection",
+    # Runtime dependencies that need to exist so that the
+    # Arch package passes final validation.
+    # Needed to provide GTK
+    "gtk3",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra",
+    # Needed to provide WebKit2
+    # "webkit2gtk",
+]
+
+system_runtime_requires = [
+    # Needed to provide GTK
+    "gtk3",
+    # Needed to provide PyGObject bindings
+    "gobject-introspection-runtime",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra",
+    # Needed to provide WebKit2 at runtime
+    # "webkit2gtk",
+]
+
+[tool.briefcase.app.aeonflux.linux.appimage]
+manylinux = "manylinux_2_28"
+
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo-gobject-devel",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection-devel",
+    # Needed to provide GTK
+    "gtk3-devel",
+    # Dependencies that GTK looks for at runtime, that need to be
+    # in the build environment to be picked up by linuxdeploy
+    "libcanberra-gtk3",
+    "PackageKit-gtk3-module",
+    "gvfs-client",
+]
+
+linuxdeploy_plugins = [
+    "DEPLOY_GTK_VERSION=3 gtk",
+]
+
+[tool.briefcase.app.aeonflux.linux.flatpak]
+flatpak_runtime = "org.gnome.Platform"
+flatpak_runtime_version = "45"
+flatpak_sdk = "org.gnome.Sdk"
+
+[tool.briefcase.app.aeonflux.windows]
+requires = [
+    "toga-winforms~=0.4.5",
+]
+
+# Mobile deployments
+[tool.briefcase.app.aeonflux.iOS]
+requires = [
+    "toga-iOS~=0.4.5",
+    "std-nslog~=1.0.0",
+]
+
+[tool.briefcase.app.aeonflux.android]
+requires = [
+    "toga-android~=0.4.5",
+]
+
+base_theme = "Theme.MaterialComponents.Light.DarkActionBar"
+
+build_gradle_dependencies = [
+    "com.google.android.material:material:1.11.0",
+    # Needed for DetailedList
+    # "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0",
+    # Needed for MapView
+    # "org.osmdroid:osmdroid-android:6.1.0",
+]
+
+# Web deployments
+[tool.briefcase.app.aeonflux.web]
+requires = [
+    "toga-web~=0.4.5",
+]
+style_framework = "Shoelace v2.3"
+
+Briefcase Log:
+[09:22:39]                                                                                                                                                                dev.py:250
+           [aeonflux] Starting in dev mode...                                                                                                                             dev.py:250
+                                                                                                                                                                   subprocess.py:827
+           >>> Running Command:                                                                                                                                    subprocess.py:827
+           >>>     /home/hackerone/python-libraries/bin/python -c 'import runpy, sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("aeonflux",              subprocess.py:827
+           run_name="__main__", alter_sys=True)'                                                                                                                                    
+           >>> Working Directory:                                                                                                                                  subprocess.py:827
+           >>>     /home/hackerone                                                                                                                                 subprocess.py:827
+           >>> Environment Overrides:                                                                                                                              subprocess.py:827
+[09:22:40] >>>     PYTHONPATH=/home/hackerone/aeonflux/src                                                                                                         subprocess.py:827
+           >>>     PYTHONUNBUFFERED=1                                                                                                                              subprocess.py:827
+           >>>     PYTHONDEVMODE=1                                                                                                                                 subprocess.py:827
+           >>>     PYTHONUTF8=1                                                                                                                                    subprocess.py:827
+           ===========================================================================                                                                                    run.py:171
+           Traceback (most recent call last):                                                                                                                      subprocess.py:195
+             File "<string>", line 1, in <module>                                                                                                                  subprocess.py:195
+             File "<frozen runpy>", line 226, in run_module                                                                                                        subprocess.py:195
+             File "<frozen runpy>", line 98, in _run_module_code                                                                                                   subprocess.py:195
+             File "<frozen runpy>", line 88, in _run_code                                                                                                          subprocess.py:195
+             File "/home/hackerone/aeonflux/src/aeonflux/__main__.py", line 1, in <module>                                                                         subprocess.py:195
+               from aeonflux.app import main                                                                                                                       subprocess.py:195
+             File "/home/hackerone/aeonflux/src/aeonflux/app.py", line 25                                                                                          subprocess.py:195
+               if self.say_hello is not None:                                                                                                                      subprocess.py:195
+               ^^                                                                                                                                                  subprocess.py:195
+           SyntaxError: invalid syntax                                                                                                                             subprocess.py:195
+                                                                                                                                                                      __main__.py:44
+           Problem running app aeonflux.                                                                                                                              __main__.py:45
+           Saving log... started                                                                                                                                      console.py:390
+
+Main thread traceback:
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /home/hackerone/python-libraries/lib64/python3.12/site-packages/briefcase/__main__.py:29 in main                                                                                 │
+│                                                                                                                                                                                  │
+│   26 │   │   │   Path.cwd() / "pyproject.toml",                                                                                                                                  │
+│   27 │   │   │   overrides=overrides,                                                                                                                                            │
+│   28 │   │   )                                                                                                                                                                   │
+│ ❱ 29 │   │   command(**options)                                                                                                                                                  │
+│   30 │   except HelpText as e:                                                                                                                                                   │
+│   31 │   │   logger.info()                                                                                                                                                       │
+│   32 │   │   logger.info(str(e))                                                                                                                                                 │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────╮                                                      │
+│ │       command = <briefcase.commands.dev.DevCommand object at 0x7fbfee5d9be0>                                            │                                                      │
+│ │       Command = <class 'briefcase.commands.dev.DevCommand'>                                                             │                                                      │
+│ │       console = <briefcase.console.Console object at 0x7fbfede9e9c0>                                                    │                                                      │
+│ │             e = BriefcaseCommandError('Problem running app aeonflux.')                                                  │                                                      │
+│ │ extra_cmdline = []                                                                                                      │                                                      │
+│ │        logger = <briefcase.console.Log object at 0x7fbfedf27920>                                                        │                                                      │
+│ │       options = {'appname': None, 'update_requirements': False, 'run_app': True, 'test_mode': False, 'passthrough': []} │                                                      │
+│ │     overrides = {}                                                                                                      │                                                      │
+│ │       printer = <briefcase.console.Printer object at 0x7fbfef3ae300>                                                    │                                                      │
+│ │        result = 200                                                                                                     │                                                      │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                      │
+│                                                                                                                                                                                  │
+│ /home/hackerone/python-libraries/lib64/python3.12/site-packages/briefcase/commands/dev.py:252 in __call__                                                                        │
+│                                                                                                                                                                                  │
+│   249 │   │   │   else:                                                                                                                                                          │
+│   250 │   │   │   │   self.logger.info("Starting in dev mode...", prefix=app.app_name)                                                                                           │
+│   251 │   │   │   env = self.get_environment(app, test_mode=test_mode)                                                                                                           │
+│ ❱ 252 │   │   │   return self.run_dev_app(                                                                                                                                       │
+│   253 │   │   │   │   app,                                                                                                                                                       │
+│   254 │   │   │   │   env,                                                                                                                                                       │
+│   255 │   │   │   │   test_mode=test_mode,                                                                                                                                       │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────╮                                       │
+│ │                 app = <bytesecurity.com.aeonflux v0.0.1 AppConfig>                                                                     │                                       │
+│ │             appname = None                                                                                                             │                                       │
+│ │      dist_info_path = PosixPath('/home/hackerone/aeonflux/src/aeonflux.dist-info')                                                     │                                       │
+│ │                 env = {'PYTHONPATH': '/home/hackerone/aeonflux/src', 'PYTHONUNBUFFERED': '1', 'PYTHONDEVMODE': '1', 'PYTHONUTF8': '1'} │                                       │
+│ │             options = {}                                                                                                               │                                       │
+│ │         passthrough = []                                                                                                               │                                       │
+│ │             run_app = True                                                                                                             │                                       │
+│ │                self = <briefcase.commands.dev.DevCommand object at 0x7fbfee5d9be0>                                                     │                                       │
+│ │           test_mode = False                                                                                                            │                                       │
+│ │ update_requirements = False                                                                                                            │                                       │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                       │
+│                                                                                                                                                                                  │
+│ /home/hackerone/python-libraries/lib64/python3.12/site-packages/briefcase/commands/dev.py:169 in run_dev_app                                                                     │
+│                                                                                                                                                                                  │
+│   166 │   │   │   )                                                                                                                                                              │
+│   167 │   │   │                                                                                                                                                                  │
+│   168 │   │   │   # Start streaming logs for the app.                                                                                                                            │
+│ ❱ 169 │   │   │   self._stream_app_logs(                                                                                                                                         │
+│   170 │   │   │   │   app,                                                                                                                                                       │
+│   171 │   │   │   │   popen=app_popen,                                                                                                                                           │
+│   172 │   │   │   │   test_mode=test_mode,                                                                                                                                       │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────────────╮                   │
+│ │         app = <bytesecurity.com.aeonflux v0.0.1 AppConfig>                                                                                                 │                   │
+│ │   app_popen = <Popen: returncode: 1 args: ['/home/hackerone/python-libraries/bin/python', ...>                                                             │                   │
+│ │     cmdline = ['/home/hackerone/python-libraries/bin/python', '-c', 'import runpy, sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("aeonflux'+39] │                   │
+│ │         env = {'PYTHONPATH': '/home/hackerone/aeonflux/src', 'PYTHONUNBUFFERED': '1', 'PYTHONDEVMODE': '1', 'PYTHONUTF8': '1'}                             │                   │
+│ │ main_module = 'aeonflux'                                                                                                                                   │                   │
+│ │     options = {}                                                                                                                                           │                   │
+│ │ passthrough = []                                                                                                                                           │                   │
+│ │        self = <briefcase.commands.dev.DevCommand object at 0x7fbfee5d9be0>                                                                                 │                   │
+│ │   test_mode = False                                                                                                                                        │                   │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                   │
+│                                                                                                                                                                                  │
+│ /home/hackerone/python-libraries/lib64/python3.12/site-packages/briefcase/commands/run.py:202 in _stream_app_logs                                                                │
+│                                                                                                                                                                                  │
+│   199 │   │   │   │   # If we're monitoring an actual app (not just a log stream),                                                                                               │
+│   200 │   │   │   │   # and the app didn't exit cleanly, surface the error to the user.                                                                                          │
+│   201 │   │   │   │   if popen.poll() != 0:                                                                                                                                      │
+│ ❱ 202 │   │   │   │   │   raise BriefcaseCommandError(f"Problem running app {app.app_name}.")                                                                                    │
+│   203 │   │                                                                                                                                                                      │
+│   204 │   │   except KeyboardInterrupt:                                                                                                                                          │
+│   205 │   │   │   pass  # Catch CTRL-C to exit normally                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────── locals ─────────────────────────────────────────────╮                                                                              │
+│ │          app = <bytesecurity.com.aeonflux v0.0.1 AppConfig>                                     │                                                                              │
+│ │ clean_filter = None                                                                             │                                                                              │
+│ │ clean_output = False                                                                            │                                                                              │
+│ │  exit_filter = <function LogFilter.test_filter.<locals>.filter_func at 0x7fbfedd46c00>          │                                                                              │
+│ │   log_filter = <briefcase.commands.run.LogFilter object at 0x7fbfedce3a10>                      │                                                                              │
+│ │   log_stream = False                                                                            │                                                                              │
+│ │        popen = <Popen: returncode: 1 args: ['/home/hackerone/python-libraries/bin/python', ...> │                                                                              │
+│ │         self = <briefcase.commands.dev.DevCommand object at 0x7fbfee5d9be0>                     │                                                                              │
+│ │    stop_func = <function RunAppMixin.<lambda> at 0x7fbfede92840>                                │                                                                              │
+│ │    test_mode = False                                                                            │                                                                              │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+BriefcaseCommandError: Problem running app aeonflux.
