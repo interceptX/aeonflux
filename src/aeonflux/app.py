@@ -7,6 +7,7 @@ import datetime
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW
 
+from aeonflux.cve_2024_23421 import CVE_2024_23421
 
 class aeonflux(toga.App):
     def startup(self):
@@ -34,16 +35,20 @@ class aeonflux(toga.App):
             target_domain = self.name_input.value
 
             if "." in target_domain:
-                print(f"[+][{time.hour}:{time.minute}:{time.second}] now checking vulnerabilities target : https://{self.name_input.value}")
-                self.data = toga.Label(self.cve(), style=Pack(background_color='green'))
-                self.main_box.add(self.data)
+                self.cve_2024_23421(target_domain)
 
             else:
-                print(f"[!][{time.hour}:{time.minute}:{time.second}] no target value found, cant perform attack")
+                text = f"[{time.hour}:{time.minute}:{time.second}] no target value found, cant perform the attack"
+                self.data = toga.Label(text, style=Pack(background_color='yellow', color='black'))
+                self.main_box.add(self.data)
 
-    def cve(self):
-        a = f"➤ CVE-2024-23421 ➤ {self.name_input.value} is not vulnerable."
-        return a
+    def cve_2024_23421(self, domain):
+        time = datetime.datetime.now()
+        cve_class = CVE_2024_23421()
+        get_data = cve_class.check_vulnerability(domain)
+        activity = toga.Label(get_data)
+        self.main_box.add(activity)
+
 
 def main():
     return aeonflux()
