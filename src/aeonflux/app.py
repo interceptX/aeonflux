@@ -7,6 +7,7 @@ import datetime
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW
 
+#cve,cpe,cwe vulnerability modules
 from aeonflux.cve_2024_23421 import CVE_2024_23421
 
 class aeonflux(toga.App):
