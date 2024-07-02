@@ -18,21 +18,37 @@ from aeonflux.cve_database.CVE_2024_21519 import cve_2024_21519
 from aeonflux.cve_database.CVE_2024_21518 import cve_2024_21518
 from aeonflux.cve_database.CVE_2024_21517 import cve_2024_21517
 from aeonflux.cve_database.CVE_2024_21516 import cve_2024_21516
+from aeonflux.cve_database.CVE_2024_21515 import cve_2024_21515
+from aeonflux.cve_database.CVE_2024_21514 import cve_2024_21514
+from aeonflux.cve_database.CVE_2024_6241 import cve_2024_6241
+from aeonflux.cve_database.CVE_2024_5447 import cve_2024_5447
+
+
+
 
 class aeonflux(toga.App):
     def startup(self):
         
         self.main_box = toga.Box(style=Pack(direction=COLUMN))
+        
         name_label = toga.Label('Target:', style=Pack(padding=(0,5)),)
+                
         self.name_input = toga.TextInput(style=Pack(flex=1))
+        
         name_box = toga.Box(style=Pack(direction=ROW, padding=5))
         name_box.add(name_label)
         name_box.add(self.name_input)
-        button = toga.Button('Start Attack!', on_press=self.get_data, style=Pack(padding=5),)
+        
+        button = toga.Button('Start Vulnerability Scan!', on_press=self.get_data, style=Pack(padding=5),)
+        
         self.main_box.add(name_box)
         self.main_box.add(button)
+        
         self.main_window = toga.MainWindow(title=self.formal_name)
+        self.scroll_container = toga.ScrollContainer(horizontal=True)
+        self.scroll_container = name_label
         self.main_window.content = self.main_box
+
         self.main_window.show()
 
 
@@ -56,6 +72,10 @@ class aeonflux(toga.App):
                     CVE_2024_21518 = cve_2024_21518()
                     CVE_2024_21517 = cve_2024_21517()
                     CVE_2024_21516 = cve_2024_21516()
+                    CVE_2024_21515 = cve_2024_21515()
+                    CVE_2024_21514 = cve_2024_21514()
+                    CVE_2024_6241 = cve_2024_6241()
+                    CVE_2024_5447 = cve_2024_5447()
 
                     alive_message = toga.Label(alive_message, style=Pack(background_color='yellow', color='black'))
                     
@@ -65,9 +85,13 @@ class aeonflux(toga.App):
                     CVE_2024_37680 = toga.Label(CVE_2024_37680.endpoint_xss(target_domain))
                     CVE_2024_37677 = toga.Label(CVE_2024_37677.endpoint_xss(target_domain))
                     CVE_2024_21519 = toga.Label(CVE_2024_21519.arbitrary_verify(target_domain))
-					CVE_2024_21518 = toga.Label(CVE_2024_21518.request_xss(target_domain))
-					CVE_2024_21517 = toga.Label(CVE_2024_21517.reflected_xss(target_domain))
-					CVE_2024_21516 = toga.Label(CVE_2024_21516.reflected_xss(target_domain))
+                    CVE_2024_21518 = toga.Label(CVE_2024_21518.request_xss(target_domain))
+                    CVE_2024_21517 = toga.Label(CVE_2024_21517.reflected_xss(target_domain))
+                    CVE_2024_21516 = toga.Label(CVE_2024_21516.reflected_xss(target_domain))
+                    CVE_2024_21515 = toga.Label(CVE_2024_21515.reflected_xss(target_domain))
+                    CVE_2024_21514 = toga.Label(CVE_2024_21514.sql_injection(target_domain))
+                    CVE_2024_6241 = toga.Label(CVE_2024_6241.sql_injection(target_domain))
+                    CVE_2024_5447 = toga.Label(CVE_2024_5447.endpoint_xss(target_domain))
                                         
                     self.main_box.add(alive_message)
                     self.main_box.add(CVE_2024_4704)
@@ -79,6 +103,10 @@ class aeonflux(toga.App):
                     self.main_box.add(CVE_2024_21518)
                     self.main_box.add(CVE_2024_21517)
                     self.main_box.add(CVE_2024_21516)
+                    self.main_box.add(CVE_2024_21515)
+                    self.main_box.add(CVE_2024_21514)
+                    self.main_box.add(CVE_2024_6241)
+                    self.main_box.add(CVE_2024_5447)
                     
                 else:
                     down_message = f'[{time.hour}:{time.minute}:{time.microsecond}] target is not alive in the network and can not be tested!'
