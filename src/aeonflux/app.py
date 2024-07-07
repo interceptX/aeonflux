@@ -49,15 +49,14 @@ class aeonflux(toga.App):
 
 
     def get_data(self, widget):
-            time = datetime.datetime.now()
             target_domain = self.name_input.value
+            time = datetime.datetime.now()
+            time_str = time.strftime('%H:%M:%S')
+            time_str_fixed = f'{time_str:>8}'
             
             if '.' in target_domain:
                 url = 'https://'+target_domain
                 response = requests.get(url)
-                time = datetime.datetime.now()
-                time_str = now.strftime('%H:%M:%S')
-                time_str_fixed = f'{time_str:>8}'
                 
                 if response.status_code == 200:
                     status = f'[{time_str_fixed}] target is alive in the network.'
@@ -82,11 +81,8 @@ class aeonflux(toga.App):
 
                     
                     for cve in vulnerabilities:
-                        if "vulnerable" in cve:
-                            self.main_box.add(toga.Label(cve, style=Pack(background_color='#33CC33', color='#FFFFFF')))
-                        else:
-                            self.main_box.add(toga.Label(cve, style=Pack(background_color='#FF0000', color='#FFFFFF')))
-                                                
+                        self.main_box.add(toga.Label(cve, style=Pack(background_color='black', color='#FFFFFF')))
+                                                                        
                 else:
                     down_message = f'[{time_str_fixed}] target is not alive in the network and can not be tested!'
                     show_values = toga.Label(down_message, style=Pack(background_color='#00FFFF', color='black'))
